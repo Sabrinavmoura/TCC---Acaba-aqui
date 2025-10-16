@@ -1,0 +1,155 @@
+/* Estilos gerais da página */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: linear-gradient(to bottom, #e0f7fa, #ffffff);
+    color: #333;
+    margin: 0;
+    padding: 0; /* Remove padding do body */
+}
+
+/* Container principal do formulário */
+.container {
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    max-width: 750px;
+    /* Centraliza na horizontal e adiciona margem no topo/baixo */
+    margin: 50px auto; 
+    text-align: left;
+    box-sizing: border-box;
+}
+
+/* Título principal */
+h1 {
+    color: #00796b;
+    text-align: center;
+    margin-bottom: 35px;
+    font-size: 2em;
+}
+
+/* Bloco de cada pergunta */
+.pergunta-bloco {
+    margin-bottom: 40px;
+    border-top: 1px solid #eee;
+    padding-top: 30px;
+}
+.pergunta-bloco:first-child {
+    border-top: none;
+    padding-top: 0;
+}
+
+/* Título de cada pergunta */
+.titulo-pergunta {
+    font-weight: bold;
+    font-size: 1.25em;
+    display: block;
+    margin-bottom: 20px;
+    color: #004d40;
+}
+
+/* Item de opção individual (radio button + label) */
+.opcao-item {
+    margin-bottom: 12px;
+}
+
+/* ESCONDE o botão de rádio original */
+.opcao-item input[type="radio"] {
+    display: none;
+}
+
+/* Estilo do label que contém o emoji e o texto */
+.opcao-item label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+/* Efeito ao passar o mouse sobre uma opção */
+.opcao-item label:hover {
+    background-color: #f7fdfd;
+    border-color: #00796b;
+}
+
+/* Estilo do emoji dentro do label */
+.emoji {
+    font-size: 1.8em;
+    margin-right: 15px;
+    width: 40px;
+    text-align: center;
+}
+
+/* Estilo do texto dentro do label */
+.texto {
+    font-size: 1.1em;
+}
+
+/* Estilo da opção QUANDO SELECIONADA */
+.opcao-item input[type="radio"]:checked + label {
+    background-color: #e0f2f1;
+    border-color: #00796b;
+    font-weight: bold;
+}
+
+/* Estilos para os campos de texto opcionais */
+.texto-opcional {
+    margin-top: 20px;
+}
+.texto-opcional label {
+    font-size: 0.95em;
+    color: #555;
+    font-weight: bold;
+}
+.input-texto-opcional, .textarea-livre {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+.textarea-livre {
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* Estilo do botão de salvar */
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.1em;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+.link-dashboard {
+    display: block;
+    text-align: right;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #00796b;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.link-dashboard:hover {
+    color: #004d40;
+    text-decoration: underline;
+}
